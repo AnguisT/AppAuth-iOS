@@ -293,9 +293,9 @@ static NSString *const kAdditionalParametersKey = @"additionalParameters";
 
     NSString *authValue = [NSString stringWithFormat:@"Basic %@", basicAuth];
     [httpHeaders setObject:authValue forKey:@"Authorization"];
-  } else  {
-    [bodyParameters addParameter:kClientIDKey value:_clientID];
   }
+  
+  [bodyParameters addParameter:kClientIDKey value:_clientID];
 
   // Constructs request with the body string and headers.
   NSString *bodyString = [bodyParameters URLEncodedParameters];
