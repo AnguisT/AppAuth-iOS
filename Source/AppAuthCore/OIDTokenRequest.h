@@ -16,6 +16,8 @@
         limitations under the License.
  */
 
+// Тестовый коммент
+
 #import <Foundation/Foundation.h>
 
 // This file only declares string constants useful for constructing a @c OIDTokenRequest, so it is
